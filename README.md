@@ -32,7 +32,9 @@ To begin the modifications for the ALU, I began stepping through each part indiv
   The LDA does the same thing as IN and sets the result to data
   To Check: '1011' = '1011' which is correct. 
   
+The simulated results for the ALU vhdl is below, which follows my thought process above.
 
+![alt text] (https://raw.github.com/CassieMcPeek/Lab4/master/ALU_Sim2.JPG "Waveform")
 
 
 # Functionality
