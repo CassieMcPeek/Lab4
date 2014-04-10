@@ -37,6 +37,13 @@ The simulated results for the ALU vhdl is below, which follows my thought proces
 ![alt text] (https://raw.github.com/CassieMcPeek/Lab4/master/ALU_Sim2.JPG "Waveform")
 
 
+Datapath Modifications
+
+
+The simulated results for the Datapath is below.
+
+![alt text] (https://raw.github.com/CassieMcPeek/Lab4/master/Datapath_Sim.JPG "Waveform")
+
 # Functionality
 
 
