@@ -71,7 +71,7 @@ The simulated results for the Datapath is below.
 
 I printed out the screenshots of the signals for 700 ns and wrote directly on them. The screenshots are below:
 
-![alt text] (https://raw.github.com/CassieMcPeek/Lab4/master/Lab4_FinalSim.JPG "Waveform")
+![alt text] (https://raw.github.com/CassieMcPeek/Lab4/master/Lab4_FinalSim.jpg "Waveform")
 
 
 For my analysis of 50 to 100 ns, I will step you through what I did.
