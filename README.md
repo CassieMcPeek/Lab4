@@ -70,3 +70,21 @@ The simulated results for the Datapath is below.
 # Reverse Engineering
 
 I printed out the screenshots of the signals for 700 ns and wrote directly on them. The screenshots will be below as soon as I upload them. 
+
+
+For my analysis of 50 to 100 ns, I will step you through what I did.
+
+1. IR loads '3' because when irld is '1', '3' is on the data bus.
+2. 'b' - 1011 is 1101 implementing ROR. The ROR happens because that is the instruction in 'IR' the 'b' is rotated because it was loaded into the accumulator for the previous instruction ('7').
+3. '4' goes into the IR because of the out function.
+4. accld = '1' so the accumulator changes
+5. MarLo changes to '3' because MarLoLD is '1' and data = '3' so it loads the data
+6. IR changes whenever IRld is high ('1') and loads whatever is in data.
+7. addrsel = '1' so addr goes to MarHi and MarLo. MarHi = 0000 and MarLo = 0011. addr = '00000011'
+8. the same thing happens as step 1 with MarHi.
+9. Jumpsel = '1' so it puts marHi and MarLo into PC and restarts the pc incrementing. It also becomes the addr because addrsel = '1'.
+10. ROR from "1101" to "1110" because accld = '1'
+11. It seems like whenevera load is '1' the corresponding signals change in relation to what is on the data bus and/or the accumulator.
+
+
+
